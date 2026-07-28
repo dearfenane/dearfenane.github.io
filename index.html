@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dearwebsite</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 768px;
+            margin: 42px auto;
+            padding: 0 20px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 20px 0;
+        }
+
+        footer {
+            margin-top: 42px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        a {
+            color: #555;
+            text-decoration: none;
+            border-bottom: 1px dashed #555;
+        }
+
+        a:hover {
+            color: #000;
+            border-bottom: 1px solid #000;
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .title {
+            animation-name: spinner;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .title {
+                animation: none;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #141414;
+                color: #eee;
+            }
+
+            a {
+                color: #eee;
+                border-bottom: 1px dashed #eee;
+            }
+
+            a:hover {
+                color: #d0d0d0;
+                border-bottom: 1px solid #d0d0d0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">hello</h1>
+        <hr>
+    </header>
+    <article>
+        <p>
+            where do i even start duh<br>
+            my name is fenane tho you can call me fenne<br>
+            theres nothing much you need to know about me
+        </p>
+    </article>
+    <footer>
+        <p>$(date +%Y) fenane i dont have any rights</p>
+        <p>
+            <a href="https://github.com/dearfenane">my github</a> |
+            <a href="https://leetcode.com/dearfenane">my leetcode</a>
+        </p>
+        <p>my discorb is <b>dearfenane</b></p>
+    </footer>
+</body>
+
+</html>
